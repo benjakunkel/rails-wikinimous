@@ -1,0 +1,14 @@
+<div class="container">
+  <h1 class="titulo text-center">New Article!</h1>
+  <div class="form-group">
+    <%= form_for(@article) do |f| %>
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+      <%= f.label :title %>
+      <%= f.text_field :title,class:"form-control" %>
+      <%= f.label :content %>
+      <%= f.text_area :content,class:"form-control mb-4" %>
+      <%= f.submit class:"btn btn-dark"  %>
+    <% end %>
+    <%= link_to "GO BACK", articles_path, class:"btn btn-dark mt-3" %>
+  </div>
+</div>

@@ -1,0 +1,6 @@
+<div class="container text-center">
+  <h3 class="tarea text-center p-2"><%= @article.title %></h4>
+  <h5><%= @article.content %></h5>
+  <%= link_to "GO BACK", articles_path, class: "btn btn-dark" %>
+  <%= link_to "EDIT", edit_article_path, class: "btn btn-dark" %>
+</div>

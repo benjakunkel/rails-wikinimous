@@ -1,0 +1,10 @@
+<div class="container text-center mt-4">
+  <ul>
+  <% @articles.each do |article|%>
+  <li class = "listasinpunto">
+  <%= link_to "#{article[:title]}", article_path(article.id) %>
+    <p><%= "#{article[:content]}" %> </p>
+  </li >
+  <% end %>
+  </ul>
+</div>
